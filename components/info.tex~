@@ -1,0 +1,16 @@
+% Set here the title, authors and other stuff to be used for the cover
+% This file is used by MAIN.TEX
+
+% set title, authors and stuff for the cover
+\def\doctype{DocumentTypeAsGivenInComponentsInfoTex}
+\def\title{DocumentTitleAsGivenInComponentsInfoTex}
+\def\titleGer{DocumentTitleDeAsGivenInComponentsInfoTex}
+\def\author{Zaur Molotnikov}
+\def\date{September 16, 2013}
+\def\dateEng{\date}
+\def\dateGer{16. September 2013}
+\def\advisor{Dr. Daniel Ratiu}
+\def\supervisor{Dr. Bernhard Sch\"atz}
+
+% text to appear in the footer
+\def\footertext{}

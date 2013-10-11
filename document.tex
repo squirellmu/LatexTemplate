@@ -1,0 +1,64 @@
+\documentclass[11pt,a4paper,bibtotoc,idxtotoc,headsepline,footsepline,footexclude,BCOR12mm,DIV13,hidelinks]{scrbook}
+
+
+% Second template
+\input{components/info}
+% include settings
+\input{components/settings}
+% include commands
+\input{components/commands}
+% include custom abbreviations
+\input{components/abbreviations}
+
+% include the glossary
+\input{components/glossary}
+\makeglossaries
+
+\begin{document}
+
+	\frontmatter
+	
+	\clearemptydoublepage
+	
+	\input{components/acknowledgements}
+	
+	\input{components/abstract}
+
+	\tableofcontents
+  
+  %\input{components/outline}
+
+	\mainmatter
+	
+	
+		% ---------------------------------------------------------------------------
+		%
+		% Introduction to the problem
+		%
+		% ---------------------------------------------------------------------------
+		%\part[Introduction and Theory]{Introduction and Theory}
+		%\label{part:intro}
+		\input{chapters/Introduction}
+		
+		% ---------------------------------------------------------------------------
+		%
+		% Appendix
+		%
+		% ---------------------------------------------------------------------------
+		
+		\part*{Appendix}
+		\addcontentsline{toc}{part}{Appendix}
+		
+		\appendix %---------------------------------------
+		
+		\printglossaries
+		
+	
+
+
+  \clearemptydoublepage
+  
+	\bibliography{bibliography/literature_mbeddr}
+	
+ 
+\end{document}
